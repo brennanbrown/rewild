@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rewild-journal-cli"
+version = "0.3.0"
+description = "Rewild Journal CLI for the Compost the Workshop project"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Brennan Kenneth Brown", email = "mail@brennanbrown.ca" },
+]
+keywords = ["creative-writing", "pedagogy", "ecology", "journaling"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Education",
+  "Topic :: Education",
+  "Topic :: Text Processing :: General",
+]
+
+[project.scripts]
+rewild-journal = "cli.rewild_journal:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cli*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
