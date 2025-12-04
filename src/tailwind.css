@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-sand text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply min-h-screen flex flex-col;
+  }
+
+  .page-header {
+    @apply sticky top-0 z-40 border-b border-forest/10 bg-white/80 backdrop-blur;
+  }
+
+  .page-header-inner {
+    @apply max-w-5xl mx-auto px-4 py-4 flex items-center justify-between gap-4;
+  }
+
+  .page-title {
+    @apply flex items-center gap-2 font-semibold text-forest text-lg;
+  }
+
+  .page-nav {
+    @apply flex items-center gap-4 text-sm;
+  }
+
+  .page-nav a {
+    @apply inline-flex items-center gap-1 text-slate-700 hover:text-forest transition-colors;
+  }
+
+  .page-main {
+    @apply max-w-5xl mx-auto px-4 py-8 flex-1;
+  }
+
+  .page-footer {
+    @apply border-t border-forest/10 mt-8;
+  }
+
+  .page-footer-inner {
+    @apply max-w-5xl mx-auto px-4 py-4 text-xs text-slate-500 text-center;
+  }
+
+  .prose-shell {
+    @apply prose prose-slate max-w-none;
+  }
+
+  .callout {
+    @apply border-l-4 pl-4 py-3 my-4 rounded-r bg-white/80;
+  }
+
+  .callout-access {
+    @apply border-forest/70;
+  }
+
+  .callout-reflection {
+    @apply border-sky/70;
+  }
+
+  .callout-theory {
+    @apply border-earth/70;
+  }
+
+  .practice-list {
+    @apply list-none pl-0 space-y-6 mt-6;
+  }
+
+  .practice-item {
+    @apply border border-slate-200/80 rounded-lg p-4 bg-white/80;
+  }
+
+  .practice-item h2 {
+    @apply text-lg font-semibold text-forest mb-1;
+  }
+
+  .practice-meta {
+    @apply text-xs uppercase tracking-wide text-slate-500 space-x-2 mb-2;
+  }
+
+  .practice-tags {
+    @apply flex flex-wrap gap-1 mt-1;
+  }
+
+  .tag-pill {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs bg-sand text-slate-800 border border-slate-200;
+  }
+
+  .field-journal {
+    @apply relative max-w-2xl mx-auto my-6 p-5 border border-amber-900/20 rounded-md shadow-md bg-[#fdfaf4] transition-transform;
+    background-image: linear-gradient(to bottom, rgba(148, 163, 184, 0.35) 1px, transparent 1px);
+    background-size: 100% 1.75rem;
+    transform: rotate(-0.7deg);
+  }
+
+  .field-journal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3.25rem;
+    border-left: 1px solid rgba(248, 113, 113, 0.6);
+    pointer-events: none;
+  }
+
+  .field-journal::after {
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    left: -0.5rem;
+    bottom: 0.75rem;
+    width: 0.5rem;
+    background-image:
+      radial-gradient(circle at 0.25rem 0.5rem, rgba(148, 163, 184, 0.5) 2px, transparent 2px),
+      radial-gradient(circle at 0.25rem 1.75rem, rgba(148, 163, 184, 0.5) 2px, transparent 2px),
+      radial-gradient(circle at 0.25rem 3rem, rgba(148, 163, 184, 0.5) 2px, transparent 2px);
+    background-repeat: repeat-y;
+    background-size: 0.5rem 1.5rem;
+  }
+
+  .field-journal-header {
+    @apply relative z-10 flex items-baseline justify-between gap-4 mb-3;
+  }
+
+  .field-journal-label {
+    @apply text-[0.65rem] uppercase tracking-[0.15em] text-slate-500;
+  }
+
+  .field-journal-title {
+    @apply text-base font-semibold text-forest;
+  }
+
+  .field-journal-meta {
+    @apply text-[0.65rem] text-slate-500 flex flex-wrap gap-2 justify-end;
+  }
+
+  .field-journal-meta-row {
+    @apply mb-3 justify-between;
+  }
+
+  .field-journal-body {
+    @apply relative z-10 space-y-2 text-sm;
+  }
+
+  .field-journal:hover {
+    transform: rotate(0deg);
+  }
+
+  .field-journal-tab {
+    @apply absolute -top-3 left-6 px-3 py-1 text-[0.65rem] uppercase tracking-[0.15em] bg-amber-100 text-amber-900 border border-amber-900/30 rounded-t-md shadow-sm;
+    letter-spacing: 0.15em;
+  }
+}

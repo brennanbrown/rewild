@@ -1,0 +1,32 @@
+[
+  {
+    "href": "/framework/",
+    "icon": "fa-diagram-project",
+    "label": "Framework"
+  },
+  {
+    "href": "/practices/",
+    "icon": "fa-feather-pointed",
+    "label": "Practices"
+  },
+  {
+    "href": "/workshop/",
+    "icon": "fa-people-group",
+    "label": "Wild Minds"
+  },
+  {
+    "href": "/access/",
+    "icon": "fa-universal-access",
+    "label": "Access"
+  },
+  {
+    "href": "/resources/",
+    "icon": "fa-book-open",
+    "label": "Resources"
+  },
+  {
+    "href": "/about/",
+    "icon": "fa-user-pen",
+    "label": "About"
+  }
+]

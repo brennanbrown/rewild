@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title or site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#22543d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  {% if site.url %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% endif %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="page-header-inner">
+        <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-white focus:text-forest focus:px-3 focus:py-2 focus:rounded focus:shadow">
+          Skip to main content
+        </a>
+        <a class="page-title" href="/">
+          <i class="fa-solid fa-seedling text-forest" aria-hidden="true"></i>
+          <span>{{ site.title }}</span>
+        </a>
+        <nav class="page-nav" aria-label="Main navigation">
+          {% for item in nav %}
+          <a href="{{ item.href }}">
+            <i class="fa-solid {{ item.icon }}" aria-hidden="true"></i>
+            <span>{{ item.label }}</span>
+          </a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-main" role="main">
+      <article class="prose-shell">
+        {{ content | safe }}
+        {% if tags and "practice" in tags %}
+        <p class="mt-8 text-sm">
+          Back to <a href="/practices/">Practices</a>
+        </p>
+        {% endif %}
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer-inner">
+        <p>&copy; {{ site.author }} · <a href="/about/">About</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

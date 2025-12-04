@@ -1,0 +1,17 @@
+{
+  "name": "rewild-creative-writing-site",
+  "version": "0.3.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./src/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/tailwind.css -o ./src/styles.css --watch",
+    "build": "npm run build:css && eleventy",
+    "start": "npm run build:css && (npm run watch:css & eleventy --serve)",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss": "^3.4.0"
+  }
+}
