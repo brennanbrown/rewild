@@ -1,0 +1,22 @@
+# Node
+node_modules/
+
+# Eleventy build output
+_site/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Python packaging metadata and virtualenvs
+*.egg-info/
+.venv/
+
+# Journaling output
+journals/
+
+# OS/editor cruft
+.DS_Store
+.idea/
+.vscode/
