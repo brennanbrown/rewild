@@ -1,8 +1,21 @@
-# Compost the Workshop
+<p align="center">
+  <img src="src/favicon/android-chrome-192x192.png" alt="Compost the Workshop icon" width="96" height="96">
+</p>
 
-_Rewilding creative writing in the Anthropocene._
+<h1 align="center">Compost the Workshop</h1>
 
-> Read the essay on Medium: [“How to Rewild Your Writing Practice”](https://medium.com/@brennanbrown/how-to-rewild-your-writing-practice-21a8da9e1452?sk=bde0f9f367a73456c28122d51b5a5179)
+<p align="center"><em>Rewilding creative writing in the Anthropocene.</em></p>
+
+<p align="center">
+  <a href="https://medium.com/@brennanbrown/how-to-rewild-your-writing-practice-21a8da9e1452?sk=bde0f9f367a73456c28122d51b5a5179">Read the essay on Medium</a>
+  · <a href="#running-the-site-locally">Run the site</a>
+  · <a href="#rewild-journal-cli">Rewild Journal CLI</a>
+  · <a href="#project-structure">Project structure</a>
+  · <a href="#support">Support</a>
+  · <a href="#funding">Funding</a>
+</p>
+
+---
 
 This repository contains an Eleventy-based static site and supporting tools that translate the essay **"Compost the Workshop: Rewilding Creative Writing in the Anthropocene"** into a small, accessible web experience.
 
@@ -67,8 +80,13 @@ The static site will be generated into the `_site/` directory.
 
 ## Project structure
 
-- `SITE-SPEC.md` – design spec for the site.
-- `TODO.md` – project task list.
+- `docs/`
+  - `SITE-SPEC.md` – design spec for the site.
+  - `TODO.md` – project task list.
+  - `SUPPORT.md` – support and troubleshooting notes.
+  - `FUNDING.md` – ways to support the project.
+  - `CONTRIBUTING.md` – guidelines for contributing.
+  - `rewild-essay.md` – the underlying essay text.
 - `CHANGELOG.md` – versioned change log.
 - `.eleventy.js` – Eleventy configuration (collections and asset passthroughs).
 - `netlify.toml` – Netlify build and dev settings.
