@@ -23,11 +23,11 @@ Below you'll find practices drawn from the framework in this project. Each one i
     </p>
     {% endif %}
     {% if practice.data.tags %}
-    <p class="practice-tags">
+    <div class="practice-tags">
       {% for tag in practice.data.tags %}
       <span class="tag-pill">{{ tag }}</span>
       {% endfor %}
-    </p>
+    </div>
     {% endif %}
   </li>
 {% endfor %}

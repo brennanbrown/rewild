@@ -46,7 +46,7 @@
       </div>
     </header>
     <main id="main-content" class="page-main" role="main">
-      <article class="prose-shell">
+      <article class="prose-shell{% if tags and 'practice' in tags %} prose-shell-practice{% endif %}">
         {{ content | safe }}
         {% if tags and "practice" in tags %}
         <p class="mt-8 text-sm">
