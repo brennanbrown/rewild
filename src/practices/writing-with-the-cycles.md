@@ -25,25 +25,25 @@ You can complete all four phases in one extended session or spread them over day
 
 - The "seasons" here are metaphorical; you do not need to be outside or aligned with actual weather.
 - You can track the phases in a single notebook or digital document, clearly marking each season.
-- If longer work periods are not accessible, shorten each phase to 510 minutes and let the cycle repeat more often.
+- If longer work periods are not accessible, shorten each phase to 5–10 minutes and let the cycle repeat more often.
 
 </div>
 
 ## Phases
 
-1. **Spring 2 Generative**
+1. **Spring – Generative**
    - Rapidly generate new material without judgment: lists, images, fragments, questions.
    - Focus on abundance rather than coherence.
 
-2. **Summer 2 Developing**
+2. **Summer – Developing**
    - Choose a portion of the spring material that feels alive.
    - Develop it with fuller scenes, richer description, and deeper emotional or conceptual exploration.
 
-3. **Autumn 2 Harvesting**
+3. **Autumn – Harvesting**
    - Read what you have and decide what to keep, what to move, and what to set aside.
    - Shape structure: order sections, clarify through-lines, prune redundancies.
 
-4. **Winter 2 Resting**
+4. **Winter – Resting**
    - Step back from active revision.
    - Read gently, make minimal notes, and allow the piece to lie fallow before the next cycle.
 

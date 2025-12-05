@@ -17,7 +17,7 @@ This strand invites you to treat the environments you inhabit as primary texts. 
 
 - [Watershed Writing](/practices/watershed-writing/)
 - [Succession Writing](/practices/succession-writing/)
-- [Field Journal  Nature-as-Text](/practices/field-journal-nature-as-text/)
+- [Field Journal – Nature-as-Text](/practices/field-journal-nature-as-text/)
 
 ## For instructors
 

@@ -7,7 +7,7 @@ layout: layouts/base.njk
 
 This library gathers exercises and prompts that invite you to write with your environments, rewild your approach to process, and attend to relationships between place, body, and language.
 
-Below youll find practices drawn from the framework in this project. Each one includes access notes, steps, reflection questions, and theory roots.
+Below you'll find practices drawn from the framework in this project. Each one includes access notes, steps, reflection questions, and theory roots.
 
 {% if collections.practices %}
 <ul class="practice-list">

@@ -5,7 +5,7 @@ layout: layouts/base.njk
 
 # Indigenous and Queer Lenses: Expanding Environmental Imagination
 
-This strand foregrounds Indigenous understandings of creativity as relational and Queer ecologys challenge to fixed boundaries, including genre, gender, and "nature" itself.
+This strand foregrounds Indigenous understandings of creativity as relational and Queer ecologys challenge to fixed boundaries, including genre, gender, and "nature" itself.
 
 ## Focus
 

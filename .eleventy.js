@@ -1,14 +1,18 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("practices", (collectionApi) =>
-    collectionApi.getFilteredByGlob("./practices/*.md")
+    collectionApi
+      .getFilteredByGlob("./src/practices/*.md")
+      .filter((item) => !item.inputPath.endsWith("/practices/index.md"))
   );
 
   eleventyConfig.addCollection("framework", (collectionApi) =>
-    collectionApi.getFilteredByGlob("./framework/*.md")
+    collectionApi
+      .getFilteredByGlob("./src/framework/*.md")
+      .filter((item) => !item.inputPath.endsWith("/framework/index.md"))
   );
 
   eleventyConfig.addCollection("workshop", (collectionApi) =>
-    collectionApi.getFilteredByGlob("./workshop/*.md")
+    collectionApi.getFilteredByGlob("./src/workshop/*.md")
   );
 
   eleventyConfig.addPassthroughCopy({ "src/favicon": "favicon" });

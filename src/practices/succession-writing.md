@@ -15,7 +15,7 @@ intensity: moderate
 
 # Succession Writing
 
-Succession writing adapts the ecological idea of successionfields becoming meadows, then shrubs, then forestsinto a staged writing practice. Instead of trying to draft and polish at once, you move through phases: quick pioneers, developing patterns, complex relationships, and a temporary "climax" form.
+Succession writing adapts the ecological idea of succession—fields becoming meadows, then shrubs, then forests—into a staged writing practice. Instead of trying to draft and polish at once, you move through phases: quick pioneers, developing patterns, complex relationships, and a temporary "climax" form.
 
 ## Access notes
 

@@ -16,7 +16,7 @@ intensity: moderate
 
 # Watershed Writing
 
-Watershed writing adapts the image of a watershedmany small streams flowing into a single riverto trace how seemingly separate ideas converge. Instead of forcing a linear outline, you allow multiple headwaters of thought to run downhill until they meet.
+Watershed writing adapts the image of a watershed—many small streams flowing into a single river—to trace how seemingly separate ideas converge. Instead of forcing a linear outline, you allow multiple headwaters of thought to run downhill until they meet.
 
 ## Access notes
 

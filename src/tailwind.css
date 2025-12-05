@@ -2,9 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @layer base {
+  html {
+    @apply font-body;
+  }
+
   body {
     @apply bg-sand text-slate-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
   }
 }
 
@@ -14,7 +38,7 @@
   }
 
   .page-header {
-    @apply sticky top-0 z-40 border-b border-forest/10 bg-white/80 backdrop-blur;
+    @apply sticky top-0 z-40 border-b border-forest/10 bg-sand/90 backdrop-blur shadow-sm;
   }
 
   .page-header-inner {
@@ -30,11 +54,11 @@
   }
 
   .page-nav a {
-    @apply inline-flex items-center gap-1 text-slate-700 hover:text-forest transition-colors;
+    @apply inline-flex items-center gap-1 px-2 py-1 text-slate-700 rounded-full hover:text-forest hover:bg-sand/70 transition-colors;
   }
 
   .page-main {
-    @apply max-w-5xl mx-auto px-4 py-8 flex-1;
+    @apply max-w-5xl mx-auto px-4 py-8 pb-16 flex-1;
   }
 
   .page-footer {
@@ -47,6 +71,7 @@
 
   .prose-shell {
     @apply prose prose-slate max-w-none;
+    animation: fade-in-up 0.3s ease-out both;
   }
 
   .callout {
@@ -54,15 +79,15 @@
   }
 
   .callout-access {
-    @apply border-forest/70;
+    @apply border-forest/70 bg-forest/5;
   }
 
   .callout-reflection {
-    @apply border-sky/70;
+    @apply border-sky/70 bg-sky/5;
   }
 
   .callout-theory {
-    @apply border-earth/70;
+    @apply border-earth/70 bg-earth/5;
   }
 
   .practice-list {
@@ -70,7 +95,7 @@
   }
 
   .practice-item {
-    @apply border border-slate-200/80 rounded-lg p-4 bg-white/80;
+    @apply border border-slate-200/80 rounded-lg p-4 bg-white/80 transition-transform transition-shadow hover:-translate-y-1 hover:shadow-md;
   }
 
   .practice-item h2 {

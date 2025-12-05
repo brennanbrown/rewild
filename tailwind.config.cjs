@@ -11,7 +11,7 @@ module.exports = {
         sand: "#f5f0e6"
       },
       fontFamily: {
-        display: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        display: ['"EB Garamond"', "ui-serif", "Georgia", "serif"],
         body: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"]
       }
     }
